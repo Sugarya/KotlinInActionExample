@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd59ef0d-e6b5-43d3-9f87-3a294b5a0e21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter3/Computer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter3/MacComputer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter3/WindowComputer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter4/Module.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KotlinInActionExample/META-INF/KotlinInActionExample.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KotlinInActionExample/META-INF/KotlinInActionExample.kotlin_module" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,17 +19,26 @@
       <file leaf-file-name="Example3.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+            <state relative-caret-position="306">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_Strings.kt" pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/generated/_Strings.kt">
+      <file leaf-file-name="Example4.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="392" column="29" selection-start-line="392" selection-start-column="29" selection-end-line="392" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Module.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sugarya/chapter4/Module.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -41,7 +46,7 @@
       <file leaf-file-name="Primitives.kt" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Primitives.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="7890">
               <caret line="540" column="44" selection-start-line="540" selection-start-column="44" selection-end-line="540" selection-end-column="44" />
             </state>
           </provider>
@@ -50,7 +55,7 @@
       <file leaf-file-name="Tuples.kt" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/util/Tuples.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="540">
               <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
             </state>
           </provider>
@@ -59,7 +64,7 @@
       <file leaf-file-name="MacComputer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/MacComputer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="60">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
@@ -68,7 +73,7 @@
       <file leaf-file-name="Collections.kt" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/Collections.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1650">
               <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
@@ -77,17 +82,8 @@
       <file leaf-file-name="Collections.kt" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Collections.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="2625">
               <caret line="189" column="17" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapsJVM.kt" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/MapsJVM.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -95,7 +91,7 @@
       <file leaf-file-name="Computer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Computer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="30">
               <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
@@ -104,7 +100,7 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
@@ -136,6 +132,10 @@
         <option value="$PROJECT_DIR$/src/sugarya/chapter3/Computer.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter3/MacComputer.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt" />
+        <option value="$PROJECT_DIR$/src/sugarya/chapter4/Example04.kt" />
+        <option value="$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt" />
+        <option value="$PROJECT_DIR$/src/sugarya/chapter4/Animal.kt" />
+        <option value="$PROJECT_DIR$/src/sugarya/chapter4/Module.kt" />
       </list>
     </option>
   </component>
@@ -152,9 +152,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,22 +178,7 @@
               <item name="KotlinInActionExample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sugarya" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KotlinInActionExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KotlinInActionExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sugarya" type="462c0819:PsiDirectoryNode" />
-              <item name="contrast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KotlinInActionExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KotlinInActionExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sugarya" type="462c0819:PsiDirectoryNode" />
-              <item name="contrast" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter3" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,6 +312,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -340,7 +326,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16190477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
       <window_info id="Learn" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -362,6 +348,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="189" column="17" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/MapsJVM.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Computer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3240">
@@ -602,21 +616,21 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/MapsJVM.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="735">
           <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="2625">
           <caret line="189" column="17" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1650">
           <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
@@ -624,43 +638,36 @@
     <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Coder.kt" />
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/util/Tuples.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="540">
           <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Primitives.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="7890">
           <caret line="540" column="44" selection-start-line="540" selection-start-column="44" selection-end-line="540" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Computer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="30">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/MacComputer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -668,6 +675,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="392" column="29" selection-start-line="392" selection-start-column="29" selection-end-line="392" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/chapter4/Module.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
