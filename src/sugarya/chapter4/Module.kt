@@ -1,8 +1,10 @@
+@file:JvmName("MyUtils")
+
 package sugarya.chapter4
 
 open class Animal(_name: String) {
 
-    val name: String
+    open val name: String
 
     init {
         println("init")
@@ -55,11 +57,11 @@ open class Person(name: String, val gender: Int, val age: Int) : Animal(name) {
         println("constructor name = $name, gender = $gender, age = $age")
     }
 
-    constructor(name: String, gender: Int) : this(name, gender, 5) {
+    constructor(name: String, gender: Int) : this(name, gender, 1) {
         println("constructor name = $name, gender = $gender, age = $age")
     }
 
-    open fun work(){
+    open fun work() {
         println("$name is working")
     }
 }
@@ -76,7 +78,7 @@ open class Person3(name: String, val gender: Int, val age: Int) : Animal(name) {
         println("特有的初始化逻辑")
     }
 
-    constructor(name: String, gender: Int) : this(name, gender, 5) {
+    constructor(name: String, gender: Int) : this(name, gender, 1) {
         println("constructor name = $name, gender = $gender")
         println("特有的初始化逻辑2")
     }
@@ -121,49 +123,57 @@ open class Colder : Person {
 
 //**************Kotlin自带的特殊类, 数据类，
 
-data class Potin(val x: Int, val y: Int)
+data class Point(val x: Int, val y: Int)
 
 
-
-open class Car(val name: String){
+open class Car(val name: String) {
 
     var mileage = 0
 
-    class Board{
+    class Board {
 
-        fun setup(){
+        fun setup() {
             println("底盘正常")
         }
     }
 
-    class Wheel(val size: Int){
+    class Wheel(val size: Int) {
 
-        fun setup(){
+        fun setup() {
             println("{$size}轮子正常")
         }
     }
 
-    class Body{
+    class Body {
 
-        fun show(){
+        fun show() {
             println("车壳正常")
         }
     }
 
-    inner class Engine(val fuel: Fuel){
+    inner class Engine(val fuel: Fuel) {
 
-        fun run(mileage: Int){
-            when(fuel){
-                is Oil ->
-                    println("使用石油，发动机开始工作")
-                is Gas ->
+        fun run(mileage: Int) {
+            val result: Int = when (fuel) {
+                is Oil -> {
+                    fuel.calucate()
+                    1
+                }
+                is Gas -> {
                     println("使用天然气，发动机开始工作")
+                    fuel.calucateGas()
+                    1
+                }
+                is Electric -> {
+                    fuel.calucateElectric()
+                    3
+                }
             }
             this@Car.mileage = this@Car.mileage + mileage
         }
     }
 
-    fun work(mileage: Int){
+    fun work(mileage: Int) {
         Board().setup()
         Wheel(4).setup()
         Body().show()
@@ -174,71 +184,95 @@ open class Car(val name: String){
 
 sealed class Fuel
 
-class Oil : Fuel()
+class Oil : Fuel() {
 
-class Gas : Fuel()
+    fun calucate(): Float {
+        println("使用石油，发动机开始工作")
+        return 0.5f
+    }
+}
+
+class Gas : Fuel() {
+    fun calucateGas(): Float {
+        return 0.6f
+    }
+}
+
+class Electric : Fuel() {
+    fun calucateElectric(): Float {
+        return 0.8f
+    }
+}
 
 
 //Object 对象声明，伴生对象，对象表达式
 
-object NameComparator : Comparator<String>{
+object NameComparator : Comparator<String> {
 
     override fun compare(o1: String, o2: String): Int {
         return o1.compareTo(o2, true)
     }
 }
 
-enum class Color{
+
+enum class Color {
     Red, Blue, Black
 }
 
 class CooperCar(name: String, val color: Color = Color.Black) : Car(name)
 
-class CarFactory{
-    object Instance{
-        fun newCooperCar(name: String): CooperCar{
+const val wheel: Int = 4
+
+class CooperCarFactory {
+
+    companion object {
+
+        fun newCooperCar(name: String): CooperCar {
+
             return CooperCar(name)
         }
 
-        fun newRedCooperCar(name: String): CooperCar{
+        fun newRedCooperCar(name: String): CooperCar {
             return CooperCar(name, Color.Red)
         }
     }
+
 }
 
-interface IClick{
+interface IClick {
 
     val clickName: String
 
     fun onClick()
 
-    fun showClickNameLength(): Int{
+    fun showClickNameLength(): Int {
         return clickName.length
     }
 }
 
-class View{
+class View {
 
-    fun addClick(iClick: IClick){
+    fun addClick(iClick: IClick) {
         iClick.onClick()
     }
 }
 
-fun countClick(view: View){
+fun countClick(view: View) {
     var clickCount = 0
 
-    val listener = object : IClick{
+    val iClick: IClick = object : IClick {
         override val clickName: String
             get() = "View"
 
         override fun onClick() {
-            clickCount ++
+            clickCount++
         }
     }
 
-    listener.showClickNameLength()
 
-    view.addClick(listener)
+    iClick.showClickNameLength()
+
+    view.addClick(iClick)
 
 }
 

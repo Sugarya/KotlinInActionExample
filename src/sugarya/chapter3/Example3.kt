@@ -3,12 +3,13 @@
 
 package sugarya.chapter3
 
-import java.util.*
-import kotlin.collections.ArrayList
+import sugarya.chapter4.wheel
+
 
 fun main(args: Array<String>) {
 //    testTripleQuote()
     testExtendFunction()
+    wheel
 }
 
 fun testTripleQuote(){
