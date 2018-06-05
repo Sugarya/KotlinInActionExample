@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd59ef0d-e6b5-43d3-9f87-3a294b5a0e21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sugarya/chapter6/Model.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sugarya/chapter4/Module.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sugarya/chapter4/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,17 @@
       <file leaf-file-name="Example6.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="201">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -58,21 +64,20 @@
         <option value="$PROJECT_DIR$/src/sugarya/chapter4/Example04.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter4/Animal.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter3/Example3.kt" />
-        <option value="$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter4/Module.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter4/Example4.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter6/Module.kt" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter6/Model.kt" />
+        <option value="$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java" />
         <option value="$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="148" />
-    <option name="y" value="108" />
-    <option name="width" value="1334" />
-    <option name="height" value="851" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -82,8 +87,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,11 +129,18 @@
               <item name="sugarya" type="462c0819:PsiDirectoryNode" />
               <item name="contrast" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="KotlinInActionExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinInActionExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sugarya" type="462c0819:PsiDirectoryNode" />
+              <item name="contrast" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +302,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -614,17 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter3/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -674,10 +676,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sugarya/contrast/chapter4/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sugarya/chapter6/Example6.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="201">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
         </state>
       </provider>
     </entry>
