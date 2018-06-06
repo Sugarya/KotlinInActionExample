@@ -1,15 +1,13 @@
 package sugarya.chapter6
 
+import kotlin.test.todo
+
 fun main(args: Array<String>) {
-//    testNoNullClient()
-//    testAnyAndUnit()
-//    testNullType()
-    testAsClient()
+    testNullExtend()
 }
 
 
 //Kotlin基本类型和转化
-
 fun testBasicType(){
 
     //Kotlin层面上不区分基本数据类型和包装类型，转成Java时有不同
@@ -17,8 +15,8 @@ fun testBasicType(){
     val boolean = false
     val aa: Char = '+'
 
-    var i: Int = 21_4748_3647 //10位
-    var l: Long = 922_3372_0368_5477_5807L  //19位 //不存在小写的l
+    val i: Int = 21_4748_3647 //10位
+    val l: Long = 922_3372_0368_5477_5807L  //19位 //不存在小写的l
 
 
     val f: Float = 123f
@@ -52,7 +50,7 @@ fun testBasicType(){
 
     //Kotlin的异常处理，1. 不存在方法上throws  2.不区分受检异常和运行时异常，统统按运行时异常处理
     try {
-        val p4 = "44".toDouble()
+        val p4 = "44-".toDouble()
     }catch (e: NumberFormatException){
         e.printStackTrace()
     }
@@ -127,6 +125,7 @@ fun testElvis2(list: List<Company?>?, defaultAddress: String?) {
     val companyList = list ?: throw IllegalArgumentException("null list")
 
     val defaultAdd = defaultAddress ?: ""
+
     val address = companyList[0]?.address?.toUpperCase() ?: defaultAdd //多重空安全调用和Elvis联合使用
     println("address = $address")
 }
@@ -214,9 +213,18 @@ fun CharSequence?.theLength(): Int =
             this.length
         }
 
+fun View?.testExtend(){
+    println("View textExtend")
+}
+
+
 fun testNullExtend() {
     val length = getTheBigCompanyInTheWorld().address.theLength()
     println("length = $length")
+
+    val tv = TextView("TextView", "")
+    tv.testExtend()
+
 }
 
 //特殊情况：泛型参数是可空类型
@@ -239,5 +247,9 @@ fun printlnStr2(s: String?) {
 }
 
 fun <T> myPrintln(t: T) {
+    if(t == null){
+
+        return
+    }
     println(t.toString())
 }
