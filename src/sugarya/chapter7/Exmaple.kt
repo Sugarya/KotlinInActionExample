@@ -54,6 +54,30 @@ fun testViewClickListener(){
     view.onLongClick()
 }
 
+//abstract class AbstractView{
+//
+//    abstract fun onClick()
+//
+//    abstract fun onLongClick()
+//}
+//
+//class ViewDelegate : AbstractView(){
+//    override fun onClick() {
+//
+//    }
+//
+//    override fun onLongClick() {
+//
+//    }
+//}
+//
+//class View2(val name: String, viewClickDelegate: ViewClickDelegate) : AbstractView by viewClickDelegate{
+//
+//    override fun onLongClick() {
+//        println("$name onLongClick")
+//    }
+//}
+
 
 //*********委托属性
 open class Food(val name: String) {
@@ -95,6 +119,7 @@ class Container2(val name: String) {
         }
 }
 
+//多属性的惰性初始化实现
 class Container3(val name: String) {
     private var _foodMap = hashMapOf<String, Food>()
     val food: Food
@@ -106,6 +131,7 @@ class Container3(val name: String) {
         }
 }
 
+//Kotlin实现
 class Container4(val name: String) {
     val food: Food by lazy{
         Food("米糊")
@@ -120,7 +146,7 @@ class Container5(val name: String) {
 }
 
 //默认 线程安全 SYNCHRONIZED
-//PUBLICATION，同步锁不是必需的，允许多个线程同时执行
+//PUBLICATION，同步锁不是必需的，允许多个线程同时执行，只取最早返回的值
 class Container6(val name: String) {
     val food: Food by lazy(LazyThreadSafetyMode.SYNCHRONIZED){
         Food("米糊")
@@ -131,6 +157,14 @@ fun testLazy() {
     val container: Container4 = Container4("碗")
     println("${container.food}, ${container.food.hashCode()}")
 }
+
+
+
+
+
+
+
+
 
 
 data class Book(val name: String)
